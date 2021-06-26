@@ -14,7 +14,7 @@
     display: flex;
     justify-content: flex-end;
     background: #000000;
-    border-bottom: #ffffff 1px solid;
+    border-bottom: #803a4d 2px solid;
 }
 
 .nav-container {
@@ -33,7 +33,7 @@
 }
 
 #welcome-section {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.425)), url(https://i.redd.it/tkywljbnca651.png) center/cover no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.082), rgba(0, 0, 0, 0.863)), url(https://i.redd.it/tkywljbnca651.png) center/cover no-repeat;
     height: 100vh;
 }
 
@@ -46,17 +46,19 @@
 }
 
 h1 {
-    color: #FFF;
-    font-size: 100px;
+    color: #ffc3d5;
+    font-size: 150px;
     font-weight: 500;
+    font-family: 'Kaushan Script', cursive;
 }
 
 h1:after {
     content: '';
     display: block;
     margin: auto;
-    border: 1px #ffffff solid;
+    border: 1px #803A4D solid;
     margin-bottom: 20px;
+    margin-top: 20px;
     text-align: center;
     width: 500px; 
 }
@@ -65,6 +67,12 @@ h1:after {
     font-weight: 100;
     font-style: italic;
     font-size: 24px;
-    color: #FFF
+    color: #b46f82
 }
 
+.secondary-color {
+    color: #ffc3d5;
+    font-weight: bold;
+    font-size: 200px;
+    font-family: 'Kaushan Script', cursive;
+}
