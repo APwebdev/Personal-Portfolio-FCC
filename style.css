@@ -5,6 +5,7 @@
     font-family: Poppins;
     list-style: none;
     text-decoration: none;
+    scroll-behavior: smooth;
 }
 
 /*Welcome Section */
@@ -15,7 +16,9 @@
     justify-content: flex-end;
     background: #000000;
     border-bottom: #803a4d 2px solid;
+    position: fixed;
 }
+
 
 .nav-container {
     display: flex;
@@ -32,9 +35,15 @@
     font-size: 24px;
 }
 
+.nav-link:hover {
+    color: #b46f82;
+    transition: 0.3s;
+}
+
 #welcome-section {
     background: linear-gradient(rgba(0, 0, 0, 0.082), rgba(0, 0, 0, 0.863)), url(https://i.redd.it/tkywljbnca651.png) center/cover no-repeat;
     height: 100vh;
+    /* border-bottom: #803a4d 1px solid; */
 }
 
 .header-title {
@@ -47,12 +56,13 @@
 
 h1 {
     color: #ffc3d5;
-    font-size: 150px;
+    font-size: 200px;
     font-weight: 500;
     font-family: 'Kaushan Script', cursive;
+    margin-top: 140px;
 }
 
-h1:after {
+/* h1:after {
     content: '';
     display: block;
     margin: auto;
@@ -61,7 +71,7 @@ h1:after {
     margin-top: 20px;
     text-align: center;
     width: 500px; 
-}
+} */
 
 .under-h1 {
     font-weight: 100;
@@ -72,7 +82,84 @@ h1:after {
 
 .secondary-color {
     color: #ffc3d5;
-    font-weight: bold;
     font-size: 200px;
     font-family: 'Kaushan Script', cursive;
+}
+
+/* About me section */
+
+#about {
+    background-color: #000;
+}
+
+.semi-title {
+    color: #b46f82;
+    font-size: 140px;
+    font-weight: 100;
+    padding-top: 300px;
+    padding-left: 200px;
+    font-family: 'Kaushan Script', cursive;
+}
+
+.semi-title:after {
+    content: '';
+    display: block;
+    border: 1px #803A4D solid;
+    width: 555px;
+}
+
+.about-info {
+    color: rgb(204, 204, 204);
+    padding-top: 30px;
+    padding-left: 200px;
+    font-size: 18px;
+    width: 60%;
+}
+
+.doc-info {
+    color: rgb(204, 204, 204);
+    padding-top: 50px;
+    padding-left: 200px;
+    width: 60%;
+}
+
+.about-me-text {
+    padding-bottom: 300px;
+}
+
+img {
+    width: 85%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.grid-about {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+/* Projects Section */
+
+#projects {
+    background-color: #000;
+    padding-top: 300px;
+}
+
+.semi-title2 {
+    color: #b46f82;
+    text-align: center;
+    font-size: 140px;
+    font-family: 'Kaushan Script', cursive;
+    font-weight: 100;
+}
+
+.semi-title2:after {
+    content: '';
+    display: block;
+    border: 1px #803A4D solid;
+    width: 450px;
+    text-align: center;
+    margin-left: 735px;
+    margin-top: 20px;
 }
