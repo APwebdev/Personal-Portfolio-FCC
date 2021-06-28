@@ -169,7 +169,6 @@ h1 {
 
 #projects {
     background-color: #000;
-    padding-top: 200 px;
     padding-bottom: 5rem;
 }
 
@@ -237,19 +236,19 @@ h1 {
 
 .button-card {
     padding: 5px 10px;
-    background: rgb(0, 145, 255);
+    background: rgb(0, 174, 255);
     transition: var(--transition);
     cursor: pointer;
+    color: #fff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
     border: 0;
     border-radius: 0.25rem;
     font-size: 1rem;
-    font-weight: 600;
-    text-transform: uppercase;
+    text-transform: capitalize;
 }
 
 .button-card:hover {
-    background: rgb(84, 181, 255);
-    color: #fff;
+    background: rgb(111, 209, 255);
 }
 
 /* Contact */
@@ -525,6 +524,18 @@ footer {
         width: 250px;
         height: auto;
     }
+
+    .button-card:nth-child(1) {
+        margin-bottom: 0.5rem;
+    }
+
+    .title-card {
+        margin-bottom: 0.5rem;
+    }
+
+    .last-card {
+        font-size: 1.3rem !important;
+    }
 }
 
 @media screen and (max-width: 365px) {
@@ -596,5 +607,3 @@ footer {
       opacity: 1;
     }
   }
-
-  
