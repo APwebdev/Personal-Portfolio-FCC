@@ -11,15 +11,19 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
     <title>Adas Papievis | Web Developer</title>
 </head>
 <body>
+    <div class="preloader">
+        <img src="Spinner.gif" alt="Preloader">
+    </div>
     <section id="welcome-section">
         <nav id="nav-bar">
             <ul class="nav-container">
                 <li class="nav-list"><a class="nav-link" href="#about">About</a></li>
                 <li class="nav-list"><a class="nav-link" href="#projects"> Projects</a></li>
-                <li class="nav-list"><a class="nav-link" href="#projects">Contact</a></li>
+                <li class="nav-list"><a class="nav-link" href="#contact">Contact</a></li>
             </ul>
         </nav>
         <div class="header-title">
@@ -36,24 +40,74 @@
                 <p class="doc-info">When I'm not coding, you'll probably find me at the local motocross track spinning laps and having a good time.</p>
             </div>
             <div class="image-about">
-                <img src="https://img5.goodfon.com/wallpaper/nbig/8/b7/anyksciai-lithuania-gorod-noch.jpg">
+                <img class="image" src="https://img5.goodfon.com/wallpaper/nbig/8/b7/anyksciai-lithuania-gorod-noch.jpg">
             </div>
         </div>
     </section>
     <section id="projects">
         <h2 class="semi-title2">Projects</h2>
-        <div class="project-tile">
-            <a class="project-links" href="https://apwebdev.github.io/Tribute-Page-FCC/" target="_blank">Tribute Page Project</a>
-        </div>
-        <div class="project-tile">
-            <a class="project-links" href="https://apwebdev.github.io/Survey-Form-FCC/" target="_blank">Survey Form Page Project</a>
-        </div>
-        <div class="project-tile">
-            <a class="project-links" href="https://apwebdev.github.io/Landing-Page-FCC/" target="_blank">Landing Page Project</a>
-        </div>
-        <div class="project-tile">
-            <a class="project-links" href="https://apwebdev.github.io/Technical-Documentation-Page-FCC/" target="_blank">Technical Documentation Page Project</a>
+        <div class="projects-grid">
+            <div class="project-card">
+                <img class="card-image" src="https://cdn.discordapp.com/attachments/847166486928687184/858996112798777344/billgates.PNG" alt="Project Image">
+                <div class="card-body">
+                    <h4 class="title-card">Tribute Page</h4>
+                    <p class="text-card">My Tribute Page made for a course on FreeCodeCamp</p>
+                    <a href="https://apwebdev.github.io/Tribute-Page-FCC/" target="_blank"><button class="button-card">View Project</button></a>
+                </div>
+            </div>
+            <div class="project-card">
+                <img class="card-image" src="https://cdn.discordapp.com/attachments/847166486928687184/858996559525969920/surveyform.PNG" alt="Project Image">
+                <div class="card-body">
+                    <h4 class="title-card">Survey Form Page</h4>
+                    <p class="text-card">My Survey Form Page made for a course on FreeCodeCamp.</p>
+                    <a href="https://apwebdev.github.io/Survey-Form-FCC/" target="_blank"><button class="button-card">View Project</button></a>
+                </div>
+            </div>
+            <div class="project-card">
+                <img class="card-image" src="https://cdn.discordapp.com/attachments/847166486928687184/858996714148855818/landing.PNG" alt="Project Image">
+                <div class="card-body">
+                    <h4 class="title-card">Landing Page</h4>
+                    <p class="text-card">My Landing Page made for a course on FreeCodeCamp.</p>
+                    <a href="https://apwebdev.github.io/Landing-Page-FCC/" target="_blank"><button class="button-card">View Project</button></a>
+                </div>
+            </div>
+            <div class="project-card">
+                <img class="card-image" src="https://cdn.discordapp.com/attachments/847166486928687184/858996930692251668/doc.PNG" alt="Project Image">
+                <div class="card-body">
+                    <h4 class="title-card">Technical Documentation Page</h4>
+                    <p class="text-card">My Technical Documentation Page made for a course on FreeCodeCamp</p>
+                    <a href="https://apwebdev.github.io/Technical-Documentation-Page-FCC/" target="_blank"><button class="button-card">View Project</button></a>
+                </div>
+            </div>
         </div>
     </section>
+    <section id="contact">
+        <div class="contact-header">
+            <h2 class="contact-title">Contact Me Here</h2>
+        </div>
+        <div class="icons-links">
+            <a href="https://github.com/APwebdev" target="_blank" class="contact-link">
+                <i class="fab fa-github"></i> GitHub
+            </a>
+            <a href="mailto:adasdevelopment@gmail.com" target="_blank" class="contact-link">
+                <i class="fas fa-envelope"></i> Email
+            </a>
+            <a href="https://www.facebook.com/adas.papievis" target="_blank" class="contact-link">
+                <i class="fab fa-facebook"></i> Facebook
+            </a>
+        </div>
+    </section>
+    <footer id="footer">
+        <div class="footer-section">
+            <a class="footer-text" href="#top">Adas Papievis</a>
+            <p class="copyright-text">&copy; Copyright 2021</p>
+            <div class="socialmedia">
+                <a href="https://github.com/APwebdev" target="_blank"><i class="fab fa-github fa-2x"></i></a>
+                <a href="https://twitter.com/developerAP" target="_blank"><i class="fab fa-twitter fa-2x"></i></a>
+                <a href="https://www.facebook.com/adas.papievis" target="_blank"><i class="fab fa-facebook fa-2x"></i></a>
+            </div>
+        </div>
+    </footer>
+    <script src="js/preloader.js"></script>
 </body>
 </html>
