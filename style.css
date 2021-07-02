@@ -208,10 +208,6 @@ h1 {
     background-color: rgb(236, 234, 234);
 }
 
-.project-tile:nth-child(4) {
-    grid-column: span 3;
-}
-
 .card-image {
     width: 500px;
     height: auto;
